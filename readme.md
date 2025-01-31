@@ -10,6 +10,12 @@ This project is a simple static website showcasing the funniest and most bizarre
  Fun Facts & Trivia – Each ad includes a brief description of why it was famous
  Retro 90s-Themed UI – Bright neon colors, VHS glitch effects, pixel fonts
 
+ ## Tech Stack:  
+HTML – Structure the content (ad list, search, voting buttons)
+CSS – Create a cool 90s-style UI with neon colors and VHS glitch effects
+JavaScript – Handle voting, filtering, and the random ad feature (using Local Storage to save votes)
+
+
 
 ## Why This Project?
  No Backend Needed – Uses only front-end tech
