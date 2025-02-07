@@ -17,4 +17,7 @@ This project is a simple static website showcasing the funniest and most bizarre
  Fun & Interactive – Engages users with voting and random ad selection
  Retro Vibes – A cool design challenge using CSS
 
+# milestone 2
+ Initialize npm project using npm init .
+ Add a .gitignore file to exclude node_modules/ and package-lock.json/ and then added the  `.gitignore`file  and pushed the branch
 
