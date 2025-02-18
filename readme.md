@@ -21,3 +21,17 @@ This project is a simple static website showcasing the funniest and most bizarre
  Initialize npm project using npm init .
  Add a .gitignore file to exclude node_modules/ and package-lock.json/ and then added the  `.gitignore`file  and pushed the branch
 
+# setting up endpoint using express application 
+  firstly i created server by using express package by that we can open see server in localhost port 
+  then we need to create a new branch name then git add . then push to github and do pull request  
+
+
+## ASAP Project Deployment on Render
+
+- Logged into Render.com and log in using your kalvium.community Google account
+- Created a Web Service via Public Repository to import files
+- Deployed ASAP App Project ( Worst Passwords Ever Used )
+
+
+# Deployed App:
+Check out the deployed ASAP app here: https://s86-list-of-funny-90s-advertisements.onrender.com
