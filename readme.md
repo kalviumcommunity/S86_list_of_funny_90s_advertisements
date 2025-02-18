@@ -41,3 +41,9 @@ JavaScript – Handle voting, filtering, and the random ad feature (using Local 
 
 # Deployed App:
 Check out the deployed ASAP app here: https://s86-list-of-funny-90s-advertisements.onrender.com
+
+## Bruno API Testing Requests:
+
+This Assignment includes API requests generated and exported from Bruno, organized in a folder called docs.bruno. The requests can be used for testing APIs or further integration in the project.
+
+- Bruno: Used to generate and export API requests.
