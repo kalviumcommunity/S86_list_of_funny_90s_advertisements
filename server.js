@@ -3,6 +3,13 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const cors = require('cors')
+const advertisementRoutes = require("./routes");
+
+app.use(express.json());
+app.use(cors());
+app.use("/ads", advertisementRoutes);
+
 
 dotenv.config();
 
