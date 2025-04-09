@@ -4,7 +4,8 @@
   "description": "This project is a simple static website showcasing the funniest and most bizarre advertisements from the 90s. Users can browse categorized ads, view embedded videos, and vote on their favorites. The goal is to provide a fun and interactive experience without needing a backend.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
