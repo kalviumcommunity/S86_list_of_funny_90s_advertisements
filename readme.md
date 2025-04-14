@@ -53,3 +53,12 @@ This Assignment includes API requests generated and exported from Bruno, organiz
 
 
 I added 10 collections of my asap project in mongoatlas.
+
+## connected to mongodb
+
+created cluster in mongodb and return code in server.js and connected my cluster in .env file and push my code to github.
+
+## modifying data through api
+
+i created routes.js file to written crud operations and created models folder and written advertisement schema.
+
