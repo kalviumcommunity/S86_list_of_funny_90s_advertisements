@@ -36,7 +36,7 @@ JavaScript – Handle voting, filtering, and the random ad feature (using Local 
 
 - Logged into Render.com and log in using your kalvium.community Google account
 - Created a Web Service via Public Repository to import files
-- Deployed ASAP App Project ( Worst Passwords Ever Used )
+- Deployed ASAP App Project
 
 
 # Deployed App:
@@ -47,3 +47,5 @@ Check out the deployed ASAP app here: https://s86-list-of-funny-90s-advertisemen
 This Assignment includes API requests generated and exported from Bruno, organized in a folder called docs.bruno. The requests can be used for testing APIs or further integration in the project.
 
 - Bruno: Used to generate and export API requests.
+
+
