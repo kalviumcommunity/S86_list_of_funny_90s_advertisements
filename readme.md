@@ -49,3 +49,7 @@ This Assignment includes API requests generated and exported from Bruno, organiz
 - Bruno: Used to generate and export API requests.
 
 
+## adding collections in mongoatlas:
+
+
+I added 10 collections of my asap project in mongoatlas.

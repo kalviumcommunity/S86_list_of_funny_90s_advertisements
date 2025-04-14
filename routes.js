@@ -1,5 +1,5 @@
 const express = require("express");
-const Advertisement = require("./Models/Advertisements");
+const Advertisement = require("./Models/Advertisements.js");
 const router = express.Router();
 
 // Create an Advertisement
