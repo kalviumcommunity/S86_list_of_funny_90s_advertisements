@@ -110,5 +110,5 @@ Added collections in MongoDB to manage different parts of the app:
 
 ##  Designing component
 
-- i created components folder in src and in components added adcard.jsx,adcardpage.jsx,landingpage.jsx and written code and in app.jsx file imported components files.
+- i created components folder in src and in components added adcard.jsx,adcardpage.jsx,landingpage.jsx and written code to give dummy data and in app.jsx file imported components files.
 
