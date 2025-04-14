@@ -62,3 +62,46 @@ created cluster in mongodb and return code in server.js and connected my cluster
 
 i created routes.js file to written crud operations and created models folder and written advertisement schema.
 
+
+## landing page
+
+---
+
+### 🔹 **2. Backend Development**
+- Set up an **Express server** to run on `localhost:5000`.
+- Created **MongoDB Cluster** in MongoDB Atlas and connected it via `.env`.
+- Defined `Advertisement` schema and model in `models/advertisements.js`.
+- Created **REST API routes** (`GET`, `POST`, `PUT`, `DELETE`) in `routes.js`.
+- Connected the routes to the server in `server.js`.
+- Tested all APIs using **Bruno**, and exported the request collections.
+
+---
+
+### 🔹 **3. MongoDB Collections Added**
+Added collections in MongoDB to manage different parts of the app:
+- `advertisements`
+- `ad comments`
+- `ad media`
+- `ad voting history`
+- `categories`
+- `fun facts`
+- `random ads`
+- `user preferences`
+- `users`
+- `votes`
+
+
+### 🔹 **5. Frontend Setup**
+- Created a **new branch** and scaffolded a **React app using Vite** inside the `frontend` folder.
+- Built a **Landing Page** describing the ASAP project.
+- Added styling with CSS using a **retro 90s aesthetic** (neon fonts, glitch effects).
+- Implemented responsive layout and animations.
+
+
+### 🔹 **6. Version Control & Pull Request**
+- Committed frontend and backend code to separate folders.
+- Pushed the changes to GitHub and created a **Pull Request (PR)**.
+- Requested AI review using `@CodiumAI-Agent /review`.
+
+
+
