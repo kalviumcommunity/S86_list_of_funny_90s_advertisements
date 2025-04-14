@@ -104,4 +104,8 @@ Added collections in MongoDB to manage different parts of the app:
 - Requested AI review using `@CodiumAI-Agent /review`.
 
 
+## deployed frontend
+
+- deployed link:- https://funnyadvertisements.netlify.app/
+
 
