@@ -108,4 +108,7 @@ Added collections in MongoDB to manage different parts of the app:
 
 - deployed link:- https://funnyadvertisements.netlify.app/
 
+##  Designing component
+
+- i created components folder in src and in components added adcard.jsx,adcardpage.jsx,landingpage.jsx and written code and in app.jsx file imported components files.
 
