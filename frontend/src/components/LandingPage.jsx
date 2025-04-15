@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link to navigate
 import '../App.css'; // Adjust path as needed
 
-function App() {
+function LandingPage() {
   return (
-    <div className="app">
-      <header className="app-header">
+    <div className="landing-page">
+      <header className="landing-header">
         <h1 className="title">List of Funny 90's Advertisements</h1>
         <p className="subtitle">
           Explore the best 90s advertisements, interact with media, and vote for your favorites!
@@ -28,7 +29,9 @@ function App() {
         </div>
 
         <div className="feature-item">
-          <h3>🖼️ Advertisement Collections</h3>
+          <Link to="/cards" className="feature-link">
+            <h3>🖼️ Advertisement Collections</h3>
+          </Link>
           <p>Discover various categories of advertisements from the 90s in our collection!</p>
         </div>
 
@@ -71,4 +74,4 @@ function App() {
   );
 }
 
-export default App;
+export default LandingPage;

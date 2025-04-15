@@ -1,0 +1,136 @@
+/* General Layout - Full screen and vibrant colors */
+.ad-card-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #ff6699, #ff00cc); /* Neon 90s vibes */
+    padding: 30px;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+  }
+  
+  .page-title {
+    font-size: 4rem;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px #ff3366;
+    text-align: center;
+    animation: glow 1.5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 5px #ff3366, 0 0 10px #ff3366, 0 0 20px #ff3366;
+    }
+    100% {
+      text-shadow: 0 0 20px #ff3366, 0 0 30px #ff3366, 0 0 50px #ff3366;
+    }
+  }
+  
+  /* Form styling */
+  .form-container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .input-field {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+    border: 2px solid #fff;
+  }
+  
+  .input-field::placeholder {
+    color: #fff;
+  }
+  
+  .form-button {
+    background-color: #ff3366;
+    color: white;
+    padding: 12px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  .form-button:hover {
+    background-color: #ff0066;
+  }
+  
+  /* Ads container */
+  .ads-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .ad-card-wrapper {
+    background: #222;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    text-align: center;
+    margin-bottom: 30px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .ad-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .action-button {
+    padding: 8px 18px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .edit-button {
+    background-color: #ff6600;
+    color: white;
+  }
+  
+  .edit-button:hover {
+    background-color: #ff3300;
+  }
+  
+  .delete-button {
+    background-color: #ff0066;
+    color: white;
+  }
+  
+  .delete-button:hover {
+    background-color: #ff0044;
+  }
+  
