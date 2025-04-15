@@ -104,4 +104,20 @@ Added collections in MongoDB to manage different parts of the app:
 - Requested AI review using `@CodiumAI-Agent /review`.
 
 
+## deployed frontend
+
+- deployed link:- https://funnyadvertisements.netlify.app/
+
+##  Designing component
+
+- i created components folder in src and in components added adcard.jsx,adcardpage.jsx,landingpage.jsx and written code to give dummy data and in app.jsx file imported components files.
+
+## Connect Backend & Frontend
+- Ensure API calls (Axios) in frontend point to http://localhost:5000.
+
+- Fetch and render advertisement data from MongoDB.
+
+- Use components like AdCard to display content dynamically.
+
+
 
