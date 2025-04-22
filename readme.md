@@ -143,3 +143,14 @@ Added collections in MongoDB to manage different parts of the app:
 - Shows error messages in UI if fields are left blank or invalid.
 
 
+## Filtering Ads by User
+- In the AdCardPage, there's a "Filter by User" dropdown.
+
+- Selecting a user filters ads created by that user using their _id.
+
+## 📝 Creating Ads with Creator Info
+- While adding an ad, a "Select Creator" dropdown allows you to pick the user.
+
+- This sets the created_by field, which links the ad to a specific user.
+
+
