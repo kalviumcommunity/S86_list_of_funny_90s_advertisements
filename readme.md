@@ -104,4 +104,42 @@ Added collections in MongoDB to manage different parts of the app:
 - Requested AI review using `@CodiumAI-Agent /review`.
 
 
+## deployed frontend
+
+- deployed link:- https://funnyadvertisements.netlify.app/
+
+##  Designing component
+
+- i created components folder in src and in components added adcard.jsx,adcardpage.jsx,landingpage.jsx and written code to give dummy data and in app.jsx file imported components files.
+
+## Connect Backend & Frontend
+- Ensure API calls (Axios) in frontend point to http://localhost:5000.
+
+- Fetch and render advertisement data from MongoDB.
+
+- Use components like AdCard to display content dynamically.
+
+## Create a New Page with a Form
+- In your React app (inside components/), you already have this in AdCardPage.jsx, but if required you can create a new file like FormPage.jsx.
+
+- Make sure it includes input fields: title, description, videoUrl, year, category.
+
+- Add a submit button to POST the data to your Express backend using Axios.
+
+- After submitting, fetch all ads again to reflect the newly added entity.
+
+
+##  CRUD Operations
+
+- `GET /ads` → Fetch all advertisements
+- `POST /ads` → Add a new advertisement
+- `PUT /ads/:id` → Update ad by ID
+- `DELETE /ads/:id` → Delete ad by ID
+
+
+## ✅ Validations Added
+
+- Title, Description, Video URL, Year, and Category are **required**.
+- Shows error messages in UI if fields are left blank or invalid.
+
 
