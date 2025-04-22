@@ -1,11 +1,13 @@
 const express = require("express");
-const Advertisement = require("./Models/Advertisements.js");
+const Advertisement = require("../Models/Advertisements");
+
 const router = express.Router();
 
-// Create an Advertisement
+// Create Ad
 router.post("/", async (req, res) => {
+  const { title, description, videoUrl, year, category, created_by } = req.body;
   try {
-    const newAd = new Advertisement(req.body);
+    const newAd = new Advertisement({ title, description, videoUrl, year, category, created_by });
     await newAd.save();
     res.status(201).json(newAd);
   } catch (error) {
@@ -13,20 +15,22 @@ router.post("/", async (req, res) => {
   }
 });
 
-// Read All Advertisements
+// Get All Ads (optional filter by user)
 router.get("/", async (req, res) => {
   try {
-    const ads = await Advertisement.find();
+    const filter = {};
+    if (req.query.created_by) filter.created_by = req.query.created_by;
+    const ads = await Advertisement.find(filter).populate("created_by");
     res.json(ads);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
 });
 
-// Read Single Advertisement
+// Get Single Ad
 router.get("/:id", async (req, res) => {
   try {
-    const ad = await Advertisement.findById(req.params.id);
+    const ad = await Advertisement.findById(req.params.id).populate("created_by");
     if (!ad) return res.status(404).json({ message: "Ad not found" });
     res.json(ad);
   } catch (error) {
@@ -34,14 +38,10 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-// Update an Advertisement
+// Update Ad
 router.put("/:id", async (req, res) => {
   try {
-    const updatedAd = await Advertisement.findByIdAndUpdate(
-      req.params.id,
-      req.body,
-      { new: true }
-    );
+    const updatedAd = await Advertisement.findByIdAndUpdate(req.params.id, req.body, { new: true });
     if (!updatedAd) return res.status(404).json({ message: "Ad not found" });
     res.json(updatedAd);
   } catch (error) {
@@ -49,12 +49,12 @@ router.put("/:id", async (req, res) => {
   }
 });
 
-// Delete an Advertisement
+// Delete Ad
 router.delete("/:id", async (req, res) => {
   try {
     const deletedAd = await Advertisement.findByIdAndDelete(req.params.id);
     if (!deletedAd) return res.status(404).json({ message: "Ad not found" });
-    res.json({ message: "Advertisement deleted successfully" });
+    res.json({ message: "Ad deleted successfully" });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
