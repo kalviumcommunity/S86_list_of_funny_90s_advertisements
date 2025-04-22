@@ -1,17 +1,18 @@
-import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link to navigate
-import '../App.css'; // Adjust path as needed
+import { useNavigate } from 'react-router-dom';
+import '../App.css';
 
-function LandingPage() {
+function App() {
+  const navigate = useNavigate();
+
   return (
-    <div className="landing-page">
-      <header className="landing-header">
+    <div className="app">
+      <header className="app-header">
         <h1 className="title">List of Funny 90's Advertisements</h1>
         <p className="subtitle">
           Explore the best 90s advertisements, interact with media, and vote for your favorites!
         </p>
       </header>
-
+      
       <section className="features">
         <div className="feature-item">
           <h3>📝 Ad Comments Collection</h3>
@@ -28,10 +29,8 @@ function LandingPage() {
           <p>Browse media collections related to different ads (images, videos, etc.).</p>
         </div>
 
-        <div className="feature-item">
-          <Link to="/cards" className="feature-link">
-            <h3>🖼️ Advertisement Collections</h3>
-          </Link>
+        <div className="feature-item" onClick={() => navigate('/cards')} style={{ cursor: 'pointer' }}>
+          <h3>🖼️ Advertisement Collections</h3>
           <p>Discover various categories of advertisements from the 90s in our collection!</p>
         </div>
 
@@ -65,13 +64,13 @@ function LandingPage() {
           <p>See which ads are voted the most and which are trending!</p>
         </div>
       </section>
-
+      
       <footer className="footer">
-        <p>Created with love by Sravani 🎉</p>
+        <p>Created with love by Sravani & team 🎉</p>
         <p>2025 © List of Funny 90's Advertisements</p>
       </footer>
     </div>
   );
 }
 
-export default LandingPage;
+export default App;

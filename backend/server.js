@@ -4,11 +4,14 @@ const PORT = process.env.PORT || 5000;
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const cors = require('cors')
-const advertisementRoutes = require("./routes");
+const advertisementRoutes = require("./routes/ads");
+const authRoutes = require('./routes/auth')
+
 
 app.use(express.json());
 app.use(cors());
 app.use("/ads", advertisementRoutes);
+app.use("/auth", authRoutes);
 
 
 dotenv.config();

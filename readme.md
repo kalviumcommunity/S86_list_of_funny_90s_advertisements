@@ -135,3 +135,11 @@ Added collections in MongoDB to manage different parts of the app:
 - `POST /ads` → Add a new advertisement
 - `PUT /ads/:id` → Update ad by ID
 - `DELETE /ads/:id` → Delete ad by ID
+
+
+## ✅ Validations Added
+
+- Title, Description, Video URL, Year, and Category are **required**.
+- Shows error messages in UI if fields are left blank or invalid.
+
+
