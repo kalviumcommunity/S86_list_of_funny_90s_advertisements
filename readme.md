@@ -154,3 +154,6 @@ Added collections in MongoDB to manage different parts of the app:
 - This sets the created_by field, which links the ad to a specific user.
 
 
+## connected to sql
+
+- added folders and files in both backend and frontend related to connection of sql

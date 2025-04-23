@@ -136,12 +136,16 @@ const AdCardPage = () => {
     setFilterUser(e.target.value);
   };
 
-  const handleLogout = () => {
-    localStorage.removeItem('authToken');
-    setFilterUser('');
-    navigate('/login');
+  const handleLogout = async () => {
+    try {
+      await axios.post("http://localhost:5000/auth/logout", {}, { withCredentials: true });
+      localStorage.removeItem('token');
+      navigate('/login');
+    } catch (error) {
+      console.error("Logout failed:", error);
+    }
   };
-
+  
   return (
     <div className="ad-card-page">
       <div className="page-header">

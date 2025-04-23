@@ -4,6 +4,7 @@ const PORT = process.env.PORT || 5000;
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const cors = require('cors')
+const cookieParser = require('cookie-parser');
 const advertisementRoutes = require("./routes/ads");
 const authRoutes = require('./routes/auth')
 const entityRoutes = require('./routes/sqlEntities');
@@ -12,7 +13,12 @@ const { authenticateDatabase } = require('./sqlConfig/mysql');
 require('./Models/sqlAssociations');
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: "http://localhost:5173", // or your frontend URL
+  credentials: true
+}));
+
+app.use(cookieParser());
 app.use("/ads", advertisementRoutes);
 app.use("/auth", authRoutes);
 app.use("/api", entityRoutes);
