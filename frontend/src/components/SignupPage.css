@@ -1,0 +1,109 @@
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #ff6699, #ff00cc);
+  padding: 30px;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.signup-container h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px #ff3366;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #ff3366, 0 0 10px #ff3366, 0 0 20px #ff3366;
+  }
+  100% {
+    text-shadow: 0 0 20px #ff3366, 0 0 30px #ff3366, 0 0 50px #ff3366;
+  }
+}
+
+form {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 25px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
+  box-shadow: 0 0 15px rgba(255, 0, 102, 0.6);
+}
+
+form label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  color: #ffccff;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid white;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+}
+
+form input::placeholder {
+  color: #fff;
+}
+
+form button {
+  background-color: #ff3366;
+  color: white;
+  padding: 12px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #ff0066;
+}
+
+.error-message {
+  color: #ffcccc;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  background: rgba(255, 0, 0, 0.2);
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ff4d4d;
+}
+
+.signup-container div p {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.signup-container button {
+  margin-top: 10px;
+  background-color: transparent;
+  color: #ffccff;
+  border: 2px dashed #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Comic Sans MS', cursive;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.signup-container button:hover {
+  background-color: #ff66cc;
+  color: white;
+  border-style: solid;
+}
