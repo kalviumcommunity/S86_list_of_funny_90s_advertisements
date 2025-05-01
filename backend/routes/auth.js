@@ -51,6 +51,12 @@ router.post("/login", async (req, res) => {
       sameSite: "Lax",
     });
 
+    res.cookie("token", token, {
+      httpOnly: true,
+      maxAge: 60 * 60 * 1000, // 1 hour
+      sameSite: "Lax",
+    });
+
     res.json({ message: "Login successful", token });
   } catch (error) {
     res.status(500).json({ error: error.message });
@@ -60,6 +66,10 @@ router.post("/login", async (req, res) => {
 // Logout - clear the email cookie
 router.post("/logout", (req, res) => {
   res.clearCookie("email", {
+    httpOnly: true,
+    sameSite: "Lax",
+  });
+  res.clearCookie("token", {
     httpOnly: true,
     sameSite: "Lax",
   });
